@@ -1,0 +1,117 @@
+:root {
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orange-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  --grdt-light-slate-blue: hsl(252, 100%, 67%);
+  --grdt-light-royal-blue: hsl(241, 81%, 54%);
+  --grdt-violet-blue: hsla(256, 72%, 46%, 1);
+  --grdt-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --ntl-white: hsl(0, 0%, 100%);
+  --ntl-pale-blue: hsl(221, 100%, 96%);
+  --ntl-light-lavender: hsl(241, 100%, 89%);
+  --ntl-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+.results-component {
+  display: flex;
+  width: 700px;
+  box-shadow: 7px 8px 15px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 7px 8px 15px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 7px 8px 15px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 30px;
+}
+
+.results-component .heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    var(--grdt-light-slate-blue),
+    var(--grdt-light-royal-blue)
+  );
+  padding: 2.2rem;
+  width: 50%;
+  border-radius: 30px;
+}
+
+.results-container h1 {
+  color: var(--ntl-light-lavender);
+  margin-bottom: 1.5rem;
+}
+
+.results-container .score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--ntl-light-lavender);
+  background-color: var(--clr-cobalt-blue);
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 150px;
+  width: 150px;
+}
+
+.results-container .score span {
+  display: block;
+  color: var(--ntl-white);
+  font-weight: 800;
+  font-size: 4rem;
+  margin-top: -0.5rem;
+}
+
+.results-container p span {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.results-container .description span {
+  color: var(--ntl-white);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.results-container .description {
+  color: var(--ntl-pale-blue);
+}
+
+.summary-container {
+  width: 50%;
+  padding: 2rem;
+}
+
+.summary-container h1 {
+  margin-bottom: 2rem;
+  color: var(--ntl-dark-gray-blue);
+}
+
+.score-category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
