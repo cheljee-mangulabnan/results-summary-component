@@ -6,7 +6,7 @@
 
   --grdt-light-slate-blue: hsl(252, 100%, 67%);
   --grdt-light-royal-blue: hsl(241, 81%, 54%);
-  --grdt-violet-blue: hsla(256, 72%, 46%, 1);
+  --grdt-violet-blue: hsla(256, 72%, 46%, 0.6);
   --grdt-persian-blue: hsla(241, 72%, 46%, 0);
 
   --ntl-white: hsl(0, 0%, 100%);
@@ -49,7 +49,7 @@ body {
   align-items: center;
   text-align: center;
   background: linear-gradient(
-    0deg,
+    180deg,
     var(--grdt-light-slate-blue),
     var(--grdt-light-royal-blue)
   );
@@ -69,7 +69,12 @@ body {
   justify-content: center;
   align-items: center;
   color: var(--ntl-light-lavender);
-  background-color: var(--clr-cobalt-blue);
+
+  background: linear-gradient(
+    180deg,
+    var(--grdt-violet-blue),
+    var(--grdt-persian-blue)
+  );
   border-radius: 50%;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -90,22 +95,24 @@ body {
   margin-bottom: 1rem;
 }
 
+.results-container .description {
+  color: var(--ntl-light-lavender);
+}
 .results-container .description span {
   color: var(--ntl-white);
   font-weight: 700;
   font-size: 2rem;
 }
 
-.results-container .description {
-  color: var(--ntl-pale-blue);
-}
-
 .summary-container {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   padding: 2rem;
+  font-weight: 700;
 }
 
-.summary-container h1 {
+.summary-container h2 {
   margin-bottom: 2rem;
   color: var(--ntl-dark-gray-blue);
 }
@@ -114,4 +121,52 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  align-items: center;
+}
+
+.score-category p span {
+  color: var(--ntl-light-lavender);
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+}
+
+.category-title img {
+  margin-right: 10px;
+}
+
+.reaction .category-title {
+  color: var(--clr-light-red);
+}
+
+.memory .category-title {
+  color: var(--clr-orange-yellow);
+}
+
+.verbal .category-title {
+  color: var(--clr-green-teal);
+}
+
+.visual .category-title {
+  color: var(--clr-cobalt-blue);
+}
+
+.continue-button {
+  padding: 1rem;
+  border: none;
+  border-radius: 30px;
+  color: var(--ntl-white);
+  cursor: pointer;
+  background: var(--ntl-dark-gray-blue);
+  transition: 0.5s;
+}
+
+.continue-button:hover {
+  background: linear-gradient(
+    180deg,
+    var(--grdt-light-slate-blue),
+    var(--grdt-light-royal-blue)
+  );
 }
