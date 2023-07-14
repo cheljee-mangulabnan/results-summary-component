@@ -20,14 +20,15 @@ A responsive website built with HTML and CSS showing test results with the summa
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/cheljee-mangulabnan/results-summary-component)
+- Live Site URL: [https://results-summary-component-cm.netlify.app/](https://results-summary-component-cm.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Grid
 
 ## Author
 
