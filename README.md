@@ -16,7 +16,7 @@ A responsive website built with HTML and CSS showing test results with the summa
 
 ### Screenshot
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](assets/images/screenshot.png)
 
 ### Links
 
